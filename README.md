@@ -1,9 +1,9 @@
 # To-Do-List
 Projeto simples para aprendizado de JavaScript puro.
 
-<img src="images/to-do-list-00.png">
-
 - Consiste em uma Lista de Tarefas Simples (To-Do List) onde uma o texto que representa a tarefa é adicionado em um input e a tarefa é adicionada a uma lista após o clique no botão "+".
+
+<img src="images/to-do-list-00.png">
 
 <img src="images/to-do-list-01.png">
 
