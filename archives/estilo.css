@@ -1,0 +1,61 @@
+body{
+    background-color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1{
+    color:gray;
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 2em;
+    text-decoration: underline;
+}
+
+ul {list-style: none;}
+li {margin-bottom: 1em;}
+
+.textArea{
+    border: none;
+    width: 15em;
+    border-bottom: 1px solid gray;
+    font-size: 25px;
+    padding: 10px;
+    margin-bottom: 1.5em;
+}
+
+.addTask{
+    border: 0px solid white;
+    border-radius: 40%;
+    background-color: white;
+    margin-left: 1em;
+    font-size: 30px;
+}
+.addTask:hover{
+    background-color: rgb(211, 207, 207);
+}
+
+.checked{
+    text-decoration: line-through;
+}
+
+.itemList{
+    font-size: 25px;
+    color:gray;
+}
+
+.squareBox{
+    margin-right: 1em;
+}
+
+/**
+.delTask{
+    border: 0px solid white;
+    border-radius: 40%;
+    background-color: white;
+    margin-left: 1em;
+    font-size: 35px;
+}
+
+.delTask:hover{
+    background-color:rgb(211, 207, 207);;
+}**/
