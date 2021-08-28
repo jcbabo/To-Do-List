@@ -29,6 +29,7 @@ li {margin-bottom: 1em;}
     background-color: white;
     margin-left: 1em;
     font-size: 30px;
+    color: gray;
 }
 .addTask:hover{
     background-color: rgb(211, 207, 207);
@@ -53,6 +54,7 @@ li {margin-bottom: 1em;}
     background-color: white;
     margin-left: 1em;
     font-size: 35px;
+    color: gray;
 }
 
 .delButton:hover{
