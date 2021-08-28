@@ -11,6 +11,14 @@ Projeto simples para aprendizado de JavaScript puro.
 
 <img src="images/to-do-list-02.png">
 
+- Se quiser apagar a tarefa, bastar clicar no sinal '-' ao lado direito da tarefa que ela será apagada.
+
+<img src="images/to-do-list-03.png">
+
+<img src="images/to-do-list-04.png">
+
+
 PRÓXIMAS FEATURES:
 
-- Adicionar um botão para excluir e/ou editar ao lado de cada a tarefa da lista.
+- Adicionar um botão para editar cada a tarefa da lista.
+- implementar uma validação para que não seja permitida a inserção de uma tarefa repetida
