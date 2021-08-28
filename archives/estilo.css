@@ -16,9 +16,9 @@ li {margin-bottom: 1em;}
 
 .textArea{
     border: none;
-    width: 15em;
+    width: 30%;
     border-bottom: 1px solid gray;
-    font-size: 25px;
+    font-size: 1.5em;
     padding: 10px;
     margin-bottom: 1.5em;
 }
@@ -47,8 +47,7 @@ li {margin-bottom: 1em;}
     margin-right: 1em;
 }
 
-/**
-.delTask{
+.delButton{
     border: 0px solid white;
     border-radius: 40%;
     background-color: white;
@@ -56,6 +55,6 @@ li {margin-bottom: 1em;}
     font-size: 35px;
 }
 
-.delTask:hover{
+.delButton:hover{
     background-color:rgb(211, 207, 207);;
-}**/
+}
