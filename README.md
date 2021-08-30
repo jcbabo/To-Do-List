@@ -11,7 +11,7 @@ Projeto simples para aprendizado de JavaScript puro.
 
 <img src="images/to-do-list-02.png">
 
-- Se quiser apagar a tarefa, bastar clicar no sinal '-' ao lado direito da tarefa que ela será apagada.
+- Se quiser apagar a tarefa, bastar clicar no sinal ' - ' ao lado direito da tarefa que ela será apagada.
 
 <img src="images/to-do-list-03.png">
 
