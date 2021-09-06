@@ -20,5 +20,4 @@ Projeto simples para aprendizado de JavaScript puro.
 
 PRÓXIMAS FEATURES:
 
-- Adicionar um botão para editar cada a tarefa da lista.
 - implementar uma validação para que não seja permitida a inserção de uma tarefa repetida
