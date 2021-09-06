@@ -17,6 +17,18 @@ Projeto simples para aprendizado de JavaScript puro.
 
 <img src="images/to-do-list-04.png">
 
+- Se quiser editar a tarefa, basta clicar sobre o texto da tarefa que uma caixa de texto aparecerá
+
+<img src="images/to-do-list-05.png">
+
+... depois é só inserir ou corrigir o texto da tarefa
+
+<img src="images/to-do-list-06.png">
+
+... e teclar que sua tarefa estará editada.
+
+<img src="images/to-do-list-07.png">
+
 
 PRÓXIMAS FEATURES:
 
