@@ -11,14 +11,8 @@ function add() {
         taskText.onclick = editTask;
         let checkbox = document.createElement('input');                     //cria um input e põe como valor na variável checkbox
         checkbox.setAttribute('type', 'checkbox');                          //configura o atributo/tipo como "checkbox"
-        checkbox.addEventListener('change', function(){                     //"ouve" a mudança de estado da variável checkbox quando a caixa é marcada ou desmarcada. A função vazia (callback) é chamada como um elemento de html
-            if (this.checked == true) {                                     //condicional para a variável checkbox. O "this" é aceito aqui por conta da função callback
-                task.style.textDecoration = 'line-through';                 //se a condição for verdadeira, configura um textDecoration no valor da variável task
-            } else {
-                task.style.textDecoration = 'none';                         //se for falsa, o "textDecoration" é configurado para "none"
-            }
-        })
-        
+        checkbox.addEventListener('change', lineThrough);                   //"ouve" a mudança de estado da variável checkbox quando a caixa é marcada ou desmarcada. A função vazia (callback) é chamada como um elemento de html
+         
         checkbox.classList.add('squareBox');                                //adiciona uma classe de CSS para que o quadrado do checkbox seja estilizado
         task.classList.add('itemList');                                     //adiciona uma classe de CSS para que o conteúdo da variável task seja estilizado 
         task.prepend(checkbox);                                             //o método prepend põe o parâmetro antes da variável/elemento pois, por padrão, texto sempre vai ser mostrado antes
@@ -33,5 +27,15 @@ function add() {
         task.appendChild(deleteButton);
         document.querySelector('input.textArea').value = '';                //faz com que a área de input (textArea) fique em branco novamente para receber um novo valor
         
+    }
+}
+
+function lineThrough(event) { 
+    let checkbox = event.target;
+    let span = checkbox.parentNode.querySelector('span');
+    if (checkbox.checked == true) {                                         //condicional para a variável checkbox. O "this" é aceito aqui por conta da função callback
+        span.style.textDecoration = 'line-through';                         //se a condição for verdadeira, configura um textDecoration no valor da variável task
+    } else {
+        span.style.textDecoration = 'none';                                 //se for falsa, o "textDecoration" é configurado para "none"
     }
 }
