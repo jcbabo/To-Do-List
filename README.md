@@ -7,6 +7,10 @@ Projeto simples para aprendizado de JavaScript puro.
 
 <img src="images/to-do-list-01.png">
 
+Se a tarefa a ser inserida já existir na lista de tarefas, não será possível seguir com a inclusão e aparecerá um alerta na tela informando que a tarefa já existe.
+
+<img src="images/to-do-list-08.png">
+
 - Quando a tarefa é concluída, pode-se clicar no checkbox e a tarefa fica riscada. Marcando-a como executada.
 
 <img src="images/to-do-list-02.png">
@@ -30,6 +34,9 @@ Projeto simples para aprendizado de JavaScript puro.
 <img src="images/to-do-list-07.png">
 
 
+
+
 PRÓXIMAS FEATURES:
 
-- implementar uma validação para que não seja permitida a inserção de uma tarefa repetida
+- implementar a validação de tarefa repetida na edição de tarefas.
+- correção do bug da "tarefa fantasma". O bug ocorre quando apagamos todo o texto da tarefa existente e clicamos "enter". Fica somente o checkbox e o botão de excluir a tarefa, sem texto.
