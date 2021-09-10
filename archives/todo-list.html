@@ -6,21 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilo.css">
     <title>To Do - List</title>
-        
+
 </head>
 <body>
     <h1>To-Do List</h1>
     <div>
         <ul id="ul">
             <li>
-                <input type="text" placeholder="Adicione a tarefa" class="textArea">
+                <input type="text" placeholder="Adicione a tarefa" class="textArea" onkeydown="addEnter(event)">
                 <button type="button" class="addTask" onclick="add()">+</button>
             </li>
         </ul>
-    </div>
-    <script src="deletetask-function.js"></script>
-    <script src="addtask-function.js"></script>
-    <script src="edittask-function.js"></script>
-    
+    </div>    
 </body>
+    <script src="addtask-function.js"></script>
+    <script src="addenter-function.js"></script>
+    <script src="deletetask-function.js"></script>
+    <script src="edittask-function.js"></script>
 </html>
