@@ -6,15 +6,33 @@ function editTask(event) {
     entrada.value = spanTarget.innerText;
     spanTarget.style.display = 'none';
     entrada.addEventListener('keydown', enterKey);
+    entrada.addEventListener('keydown', escapeKey);
     spanTarget.parentNode.insertBefore(entrada, spanTarget);
 }
 
 function enterKey(event) {
-    let entrada = event.target;
-    let spanTarget = entrada.parentNode.querySelector('span');
+    let newInput = event.target;
+    let spanTarget = newInput.parentNode.querySelector('span');
     if (event.key == "Enter") {
-        spanTarget.innerText = entrada.value;
-        spanTarget.style.display = 'inline';
-        entrada.style.display = 'none';
+        let positionItem = list.indexOf(newInput.value);
+        if (positionItem > -1 && spanTarget.innerText != newInput.value) {
+            alert('Essa tarefa já existe. \nPressione "Esc" caso queira mantê-la na lista.\nCaso queira apagar a tarefa, clique no botão "-".');    
+        } else {
+            positionItem = list.indexOf(spanTarget.innerText); //*
+            spanTarget.innerText = newInput.value;
+            spanTarget.style.display = 'inline';
+            newInput.style.display = 'none';
+            list.splice(positionItem, 1, spanTarget.innerText);
+        }
     }
 }
+
+function escapeKey(event) {
+    let newInput = event.target;
+    let spanTarget = newInput.parentNode.querySelector('span');
+    if (event.key == "Escape") {
+        spanTarget.style.display = 'inline';
+        newInput.style.display = 'none';
+    }
+}
+
