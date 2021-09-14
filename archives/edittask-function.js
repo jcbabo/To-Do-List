@@ -14,15 +14,20 @@ function enterKey(event) {
     let newInput = event.target;
     let spanTarget = newInput.parentNode.querySelector('span');
     if (event.key == "Enter") {
-        let positionItem = list.indexOf(newInput.value);
-        if (positionItem > -1 && spanTarget.innerText != newInput.value) {
-            alert('Essa tarefa já existe. \nPressione "Esc" caso queira mantê-la na lista.\nCaso queira apagar a tarefa, clique no botão "-".');    
-        } else {
-            positionItem = list.indexOf(spanTarget.innerText); //*
-            spanTarget.innerText = newInput.value;
+        if (newInput.value == '') {
             spanTarget.style.display = 'inline';
             newInput.style.display = 'none';
-            list.splice(positionItem, 1, spanTarget.innerText);
+        } else {
+            let positionItem = list.indexOf(newInput.value);
+            if (positionItem > -1 && spanTarget.innerText != newInput.value) {
+                alert('Essa tarefa já existe. \n\nPressione "Ok" ou "Enter" e depois "Esc" caso queira mantê-la na lista.\n\nCaso queira apagar a tarefa, clique no botão " - ".');    
+            } else {
+                positionItem = list.indexOf(spanTarget.innerText);
+                spanTarget.innerText = newInput.value;
+                spanTarget.style.display = 'inline';
+                newInput.style.display = 'none';
+                list.splice(positionItem, 1, spanTarget.innerText);
+            }
         }
     }
 }
