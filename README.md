@@ -38,8 +38,3 @@ Se a tarefa a ser inserida já existir na lista de tarefas, não será possível
 <img src="images/to-do-list-07.png">
 
 
-
-
-PRÓXIMAS FEATURES:
-
-- correção do bug da "tarefa fantasma". O bug ocorre quando apagamos todo o texto da tarefa existente e clicamos "enter". Fica somente o checkbox e o botão de excluir a tarefa, sem texto.
